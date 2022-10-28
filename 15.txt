@@ -2,13 +2,15 @@
 
 import random
 
-lottoList = []
+def Lotto():
+    lottoList = []
+    while True:
+        lotto = random.randint(1,45)
+        if lotto not in lottoList:
+            lottoList.append(lotto)
+        if len(lottoList) == 6:
+            break
+    print("오늘 로또 번호는 = ",lottoList," 입니다")
 
-while True:
-    lotto = random.randint(1,45)
-    if lotto not in lottoList:
-        lottoList.append(lotto)
-    if len(lottoList) == 6:
-        break
-
-print("오늘의 로또 번호 = ",lottoList)
+print("추첨 시작")
+Lotto()
