@@ -69,6 +69,4 @@ while True:
         
     else:
         print("범위 벗어남")
-        
-
-        
+"""
