@@ -3,7 +3,7 @@
 import random 
 result = []
 
-for i in range(100):
+for i in range(10000):
     com1 = random.choice(["가위","바위","보"])
     com2 = random.choice(["가위","바위","보"])
 
@@ -28,15 +28,15 @@ for i in range(100):
     if com1 == com2:
         result.append("비김")    
 
-print(result)
+#print(result)
 com1_count,com2_count = 0, 0
 
-for j in range(len(result)):
+for j in range(len(result)):  #.count
     if result[j] == "com1":
         com1_count += 1
     elif result[j] == "com2":
         com2_count += 1
-print(com1_count," == ",com2_count)
+print("com1 승리 :",com1_count," == ","com2 승리 :",com2_count)
 
 if com1_count > com2_count:
     print("com1 승리")
